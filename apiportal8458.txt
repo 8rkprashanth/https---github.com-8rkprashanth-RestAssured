@@ -1,0 +1,3 @@
+Retrieving logs for app apiportal in org apimdt-cf-cipro / space apimdt-cf-cipro as sap.apim.releasepipeline@sap.com...
+
+FAILED
