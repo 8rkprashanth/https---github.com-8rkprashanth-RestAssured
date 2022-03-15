@@ -1,0 +1,13 @@
+name: sample-workflow
+on: [push]
+jobs:
+  explore-first-github-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "the job was automatically triggered vy a ${{ github.event_name }} event."
+      - run: echo "this job is now eunnint on a ${{ runner.os }} server hosted by GutHub!"
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
